@@ -118,6 +118,7 @@ task master_driver::run_phase(uvm_phase phase);
  	  seq_item_port.get_next_item(req);
 	  drive_to_dut(req);
 	  seq_item_port.item_done;
+    `uvm_info ("scoreboard","pass",UVM_LOW)
     end
 endtask
 
